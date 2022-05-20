@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <link rel="stylesheet" href="/style_it.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <title>Jelszó</title>
 </head>
 
@@ -100,41 +101,16 @@
 
     </main>
 
-    <nav id="nav">
-        <div class="innertube">
-            <hr style="height:2px;border-width:0;color:rgb(0, 0, 0);background-color:rgb(0, 0, 0)">
-            <center>
-                <h1>IT hálózat ismeretek</h1>
-            </center>
-            <hr style="height:2px;border-width:0;color:rgb(0, 0, 0);background-color:rgb(0, 0, 0)">
+    <!--NAVIGATION BAR-->
+    <div id="nav-placeholder">
 
-            <ul>
-                <center><button class="gomba gomb nagy" onclick="hiddenbtn()">Alapok</button></center>
-                <div class="divider"></div>
+    </div>
 
-                <span id="hidden">
-                        <center><a href="/tanagyag/Topológia/index_it_top.html"><button class="gomba gomb">Topológia</button></a></center>
-                        <div class="divider"></div>
-                        <center><a href="/tanagyag/Végpont/index_it_end.html"><button class="gomba gomb">Végponti eszközök</button></a></center>
-                        <div class="divider"></div>
-                        <div class="divider"></div>
-                    </span>
-
-                <center><button class="gomba gomb nagy" onclick="hiddenbtn2()">Szerver</button></center>
-                <div class="divider"></div>
-                <span id="hidden2">
-                    <center><a href="/tanagyag/server_ip/index_it_ip.html"><button class="gomba gomb">IP-címzés</button></a></center>
-                    <div class="divider"></div>
-                    <center><a href="/tanagyag/Jelszavazás/index_it_pass.html"><button class="gomba gomb">Jelszavazás</button></a></center>
-                </span>
-                <script src="/script_it.js"></script>
-
-            </ul>
-            <footer>
-                <center><a href="/index_it.html"><button class="gomba gomb nagy">Főmenü</button></a></center>
-            </footer>
-        </div>
-    </nav>
+    <script>
+        $(function(){
+            $("#nav-placeholder").load("/nav.html");
+        });
+    </script>
 
 </body>
 </html>

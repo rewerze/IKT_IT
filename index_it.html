@@ -7,70 +7,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <link rel="stylesheet" href="/style_it.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <title>IT</title>
 </head>
+
+
 
 <body>
     <header id="header">
         <h1>Fő oldal</h1>
     </header>
 
+
+    <!--ADATOk-->
     <main>
         <h2>Üdvözlünk! Ez a fejezet bemutatja, hogyan kell használni a Cisco Packet Tracer-t.</h2><br>
 
-        <p style="font-size: 20px;"><b>Letöltés menete:</b><br> Hogy ha már van egy Cisco account-od akkor csak fel kell menned a <a href="https://www.netacad.com" target="_blank">Cisco oldalára</a> és csak letölteni a Packet Tracert. Miután megvan a Setup és felraktad teljesen
-            indíthatod is a Packet Tracer-t.</p>
+        <p>A weboldal fejlesztői:</p>
+        <ul>
+            <li>Gyikó Patrik</li>
+            <li>Szomora Géza</li>
+            <li>Pályi Benedek</li>
+            <li>Suhajda Zsolt Péter</li><br><br>
+        </ul>
 
+        <p><b>Letöltés menete:</b><br> Hogy ha már van egy Cisco account-od akkor csak fel kell menned a <a href="https://www.netacad.com" target="_blank">Cisco oldalára</a> és csak le kell tölteni a Packet Tracert. Miután megvan a Setup és felraktad teljesen, indíthatod is a Packet Tracer-t.</p>
+
+
+        <!--KÉPEK-->
         <table>
             <tr>
                 <th class="border">
-                    <a href="imgs_it/k1.png"><img src="imgs_it/k1.png" alt="" style="width:270; height: 170px;"></a>
+                    <a href="imgs_it/k1.png"><img src="imgs_it/k1.png" alt=""></a>
                 </th>
                 <th class="border">
-                    <a href="imgs_it/k2.png"><img src="imgs_it/k2.png" alt="" style="width: 270px; height: 170px;"></a>
+                    <a href="imgs_it/k2.png"><img src="imgs_it/k2.png" alt=""></a>
                 </th>
                 <th class="border">
-                    <a href="imgs_it/k3.png"><img src="imgs_it/k3.png" alt="" style="width: 320px; height: 170px;"></a>
+                    <a href="imgs_it/k3.png"><img src="imgs_it/k3.png" alt=""></a>
                 </th>
             </tr>
         </table>
     </main>
 
-    <nav id="nav">
-        <div class="innertube">
-            <hr style="height:2px;border-width:0;color:rgb(0, 0, 0);background-color:rgb(0, 0, 0)">
-            <center>
-                <h1>IT hálózat ismeretek</h1>
-            </center>
-            <hr style="height:2px;border-width:0;color:rgb(0, 0, 0);background-color:rgb(0, 0, 0)">
+    <!--NAVIGATION BAR-->
+    <div id="nav-placeholder">
 
-            <ul>
-                <center><button class="gomba gomb nagy" onclick="hiddenbtn()">Alapok</button></center>
-                <div class="divider"></div>
+    </div>
 
-                <span id="hidden">
-                        <center><a href="tanagyag/Topológia/index_it_top.html"><button class="gomba gomb">Topológia</button></a></center>
-                        <div class="divider"></div>
-                        <center><a href="tanagyag/Végpont/index_it_end.html"><button class="gomba gomb">Végponti eszközök</button></a></center>
-                        <div class="divider"></div>
-                        <div class="divider"></div>
-                    </span>
-
-                <center><button class="gomba gomb nagy" onclick="hiddenbtn2()">Szerver</button></center>
-                <div class="divider"></div>
-                <span id="hidden2">
-                    <center><a href="tanagyag/server_ip/index_it_ip.html"><button class="gomba gomb">IP-címzés</button></a></center>
-                    <div class="divider"></div>
-                    <center><a href="tanagyag/Jelszavazás/index_it_pass.html"><button class="gomba gomb">Jelszavazás</button></a></center>
-                </span>
-                <script src="/script_it.js"></script>
-
-            </ul>
-            <footer>
-                <center><a href="index_it.html"><button class="gomba gomb nagy">Főmenü</button></a></center>
-            </footer>
-        </div>
-    </nav>
-
+    <script>
+        $(function(){
+            $("#nav-placeholder").load("/nav.html");
+        });
+    </script>
 </body>
 </html>
