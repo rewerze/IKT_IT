@@ -1,0 +1,14 @@
+.border:hover{ 
+    border-width: 5px;
+}
+
+img{
+    transition: 0;
+    padding: 0px;
+    background-color: none;
+}
+
+img:hover{
+        opacity: 1;
+        transform: scale(1);
+}
