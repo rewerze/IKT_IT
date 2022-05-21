@@ -1,0 +1,9 @@
+.szeles{
+    aspect-ratio: 5/1;
+}
+
+.kicsi{
+    aspect-ratio: 3/2;
+    width: 500px;
+    height: 400px;
+}
