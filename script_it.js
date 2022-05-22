@@ -1,3 +1,4 @@
+//Gomb listák
 var alapok
 function hiddenbtn()
 {
@@ -27,3 +28,11 @@ function hiddenbtn2()
         return szerver=1;
     }
 }
+
+
+//Darkmode
+var checkbox = document.getElementById("checkbox");
+
+checkbox.addEventListener("change", () => {
+    document.body.classList.toggle("dark");
+})
