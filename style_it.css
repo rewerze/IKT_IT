@@ -121,6 +121,10 @@ img:hover {
 	display: none;
 }
 
+#hidden3 {
+	display: none;
+}
+
 a {
 	text-decoration: none;
 }
@@ -131,77 +135,5 @@ table {
 }
 
 .fo{
-	max-width: min-content;
-}
-
-footer{
-	display: flex;
-	justify-content:space-between;
-	align-items: center;
-}
-
-
-
-/*Nigh mode*/
-input[type="checkbox"]{
-	-webkit-appearance: none;
-	visibility: hidden;
-	display: none;
-}
-
-.check{
-	position: relative;
-	display: block;
-	width: 90px;
-	height: 40px;
-	background: #ffffff;
-	border: 4px solid #88b8c3;
-	cursor: pointer;
-	border-radius: 20px;
-	overflow: hidden;
-	transition: ease-in 0.3s;
-}
-
-input[type="checkbox"]:checked ~ .check{
-	background: #092c3e;
-	border: 4px solid #021d2b;
-}
-
-.check:before{
-	content: '';
-	position: absolute;
-	top: 4px;
-	left: 4px;
-	background: #092c3e;
-	width: 30px;
-	height: 30px;
-	border-radius: 20px;
-	transition: 0.5s;
-}
-
-input[type="checkbox"]:checked ~ .check:before{
-	transform: translateX(-50px);
-}
-
-/*ball*/
-.check:after{
-	content: '';
-	position: absolute;
-	top: 4px;
-	left: 4px;
-	background: #ffffff;
-	width: 30px;
-	height: 30px;
-	border-radius: 20px;
-	transition: 0.5s;
-	transform: translateX(50px);
-}
-
-input[type="checkbox"]:checked ~ .check:after{
-	transform: translateX(0px);
-}
-
-/*DARK MODE*/
-body.dark{
-	background-color: #060023;
+	width: 100%;
 }

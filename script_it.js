@@ -29,10 +29,17 @@ function hiddenbtn2()
     }
 }
 
-
-//Darkmode
-var checkbox = document.getElementById("checkbox");
-
-checkbox.addEventListener("change", () => {
-    document.body.classList.toggle("dark");
-})
+var op
+function hiddenbtn3()
+{
+    if(op==1)
+    {
+        document.getElementById("hidden3").style.display="none";
+        return op=0;
+    }
+    else
+    {
+        document.getElementById("hidden3").style.display="inline";
+        return op=1;
+    }
+}
