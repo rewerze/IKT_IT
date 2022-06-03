@@ -36,6 +36,8 @@ main {
 	margin: 15px;
 	font-size: 25px;
 	padding-top: 70px;
+	padding-right: 2%;
+	margin-right: 20%;
 }
 
 .innertube {
@@ -80,7 +82,7 @@ nav ul a {
 }
 
 .divider2 {
-	height:150px;
+	height:125px;
 }
 
 .border {
@@ -155,4 +157,12 @@ table {
 	background: #005073;
 	margin-right: 0vw;
 	right: 0;
+}
+
+a:visited{
+	color: #02273A	;
+}
+
+a:link{
+	color: #005073;
 }

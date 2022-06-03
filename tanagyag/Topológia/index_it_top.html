@@ -1,68 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style_it.css">
-    <link rel="stylesheet" href="style_it_top.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style_it.css" />
+    <link rel="stylesheet" href="style_it_top.css" />
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <title>Topológia</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header id="header">
-            <h1>Topológia</h1>
+      <h1>Topológia</h1>
     </header>
 
     <main>
-        <p><b>Egy hálózati topológia a számítógép-hálózatok esetén a hálózathoz tartozó csomópontok közötti kapcsolatokat határozza meg.</b></p><br>
+      <h3>
+        Egy hálózati topológia a számítógép-hálózatok esetén a hálózathoz
+        tartozó csomópontok közötti kapcsolatokat határozza meg.
+      </h3>
 
-        <p>Jelentősebb fajtái:</p>
-            <li>sín</li>
-            <li>fa</li>
-            <li>teljes</li>
-            <li>gyűrű</li>
-            <li>csillag</li>
+      <p>Jelentősebb fajtái:</p>
+      <ul id="tutorial">
+        <li>sín</li>
+        <li>fa</li>
+        <li>teljes</li>
+        <li>gyűrű</li>
+        <li>csillag</li>
+      </ul>
 
-        <p>Csillagtopológia: csökkenti a hálózati meghibásodás esélyét azzal, hogy minden csomópont kapcsolatban áll a központi csomóponttal.</p>
-        <table>
-            <tr>
-                <th class="border">
-                    <a href="imgs_it_top/k1.PNG"><img src="imgs_it_top/k1.PNG" class="kicsi"></a>
-                </th>
-            </tr>
-        </table>
-        <p>Fatopológia: látszólag hierarchikusan rendezett csillag topológiák gyűjteménye. Minden fatopológiában létezhetnek egyedülálló, perifériális csomópontok, ezek az úgynevezett "levelek". A csillag topológiától eltérően, ahol az üzenetek közvetítését
-            a központi csomópont végzi, a fa topológiában ez a funkció nem központosított, az ágaknál lévő csomópontok valósítanak meg hasonló funkciót.</p>
-        <table>
-            <tr>
-                <th class="border">
-                    <a href="imgs_it_top/k2.jpg"> <img src="imgs_it_top/k2.jpg" class="kicsi"></a>
-                </th>
-            </tr>
-        </table>
-        <p> Lánctopológia: A legegyszerűbb topológia a lánctopológia, ahol a hálózati csomópontok között egy kapcsolat van csak. Ez a topológia egyszerű, viszont a hálózat egy kapcsolat kiesése miatt két önálló "szigetre" esik szét. </p>
-        <table>
-            <tr>
-                <th class="border">
-                    <a href="imgs_it_top/k3.jpg"> <img src="imgs_it_top/k3.jpg" class="szeles"> </a>
-                </th>
-            </tr>
-        </table>
+      <h3>Csillagtopológia:</h3>
+      <p id="tutorial">
+        Csökkenti a hálózati meghibásodás esélyét azzal, hogy minden csomópont
+        kapcsolatban áll a központi csomóponttal.
+      </p>
+      <table>
+        <tr>
+          <th class="border">
+            <a href="imgs_it_top/k1.PNG"
+              ><img src="imgs_it_top/k1.PNG" class="kicsi"
+            /></a>
+          </th>
+        </tr>
+      </table>
+      <h3>Fatopológia:</h3>
+      <p id="tutorial">
+        Látszólag hierarchikusan rendezett csillag topológiák gyűjteménye.
+        Minden fatopológiában létezhetnek egyedülálló, perifériális csomópontok,
+        ezek az úgynevezett "levelek". A csillag topológiától eltérően, ahol az
+        üzenetek közvetítését a központi csomópont végzi, a fa topológiában ez a
+        funkció nem központosított, az ágaknál lévő csomópontok valósítanak meg
+        hasonló funkciót.
+      </p>
+      <table>
+        <tr>
+          <th class="border">
+            <a href="imgs_it_top/k2.jpg">
+              <img src="imgs_it_top/k2.jpg" class="kicsi"
+            /></a>
+          </th>
+        </tr>
+      </table>
+      <h3>Lánctopológia:</h3>
+      <p id="tutorial">
+        A legegyszerűbb topológia a lánctopológia, ahol a hálózati csomópontok
+        között egy kapcsolat van csak. Ez a topológia egyszerű, viszont a
+        hálózat egy kapcsolat kiesése miatt két önálló "szigetre" esik szét.
+      </p>
+      <table>
+        <tr>
+          <th class="border">
+            <a href="imgs_it_top/k3.jpg">
+              <img src="imgs_it_top/k3.jpg" class="szeles" />
+            </a>
+          </th>
+        </tr>
+      </table>
     </main>
 
     <!--NAVIGATION BAR-->
-    <div id="nav-placeholder">
-
-    </div>
+    <div id="nav-placeholder"></div>
 
     <script>
-        $(function(){
-            $("#nav-placeholder").load("/nav.html");
-        });
+      $(function () {
+        $("#nav-placeholder").load("/nav.html");
+      });
     </script>
-
-</body>
+  </body>
 </html>

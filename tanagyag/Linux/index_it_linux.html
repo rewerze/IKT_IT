@@ -1,28 +1,266 @@
 <!DOCTYPE html>
 <html lang="hu">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style_it.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style_it.css" />
+    <link rel="stylesheet" href="style_it_linux.css" />
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-    <title>Linux</title>
-</head>
-<body>
+    <title>Ubuntu</title>
+  </head>
+  <body>
     <header id="header">
-        <h1>Ubuntu live server</h1>
+      <h1>Ubuntu live server</h1>
     </header>
+    <nav id="nav2">
+      <div class="innertube">
+        <hr
+          style="
+            height: 2px;
+            border-width: 0;
+            color: rgb(0, 0, 0);
+            background-color: rgb(0, 0, 0);
+          "
+        />
+        <h1>Ubuntu szekciói</h1>
+        <hr
+          style="
+            height: 2px;
+            border-width: 0;
+            color: rgb(0, 0, 0);
+            background-color: rgb(0, 0, 0);
+          "
+        />
+      </div>
+      <!--Gombok-->
+      <ul>
+        <center>
+          <a href="#telepites"><button class="gomb">Telepítés</button></a>
+        </center>
+        <div class="divider"></div>
+        <center>
+          <a href="#cmd"><button class="gomb">Parancsok</button></a>
+        </center>
+      </ul>
+    </nav>
+
+    <!--MAIN-->
     <main>
+      <section id="telepites">
+        <br />
+        <br />
+        <h2>Telepítés:</h2>
+        <p id="tutorial">
+          1. lépés: Nyelv kiválasztása. (Mivel ez egy karakteres operációs
+          rendszer így a billentyűzet segítségével tudok beállítgatni magadnak a
+          dolgaidat. Egérre egyáltalán nem lesz szükség)
+        </p>
+        <table>
+          <tr>
+            <th class="border">
+              <a href="imgs_it_linux/k1.png" target="_blank"
+                ><img src="imgs_it_linux/k1.png" alt=""
+              /></a>
+            </th>
+          </tr>
+        </table>
 
+        <p id="tutorial">2. lépés: Válaszd ki a billentyűzet kiosztást.</p>
+        <table>
+          <tr>
+            <th class="border">
+              <a href="imgs_it_linux/k2.png" target="_blank"
+                ><img src="imgs_it_linux/k2.png" alt=""
+              /></a>
+            </th>
+          </tr>
+        </table>
+
+        <p id="tutorial">
+          3. lépés: A telepítés inenntől veszi kezdetét! Válaszd ki az 'Ubuntu
+          telepítése' gombot.
+        </p>
+        <table>
+          <tr>
+            <th class="border">
+              <a href="imgs_it_linux/k3.png" target="_blank"
+                ><img src="imgs_it_linux/k3.png" alt=""
+              /></a>
+            </th>
+          </tr>
+        </table>
+
+        <p id="tutorial">
+          4. lépés: Itt adja meg a hálózat kapcsolati adatait.
+        </p>
+        <table>
+          <tr>
+            <th class="border">
+              <a href="imgs_it_linux/k4.png" target="_blank"
+                ><img src="imgs_it_linux/k4.png" alt=""
+              /></a>
+            </th>
+            <th class="border">
+              <a href="imgs_it_linux/k5.png" target="_blank"
+                ><img src="imgs_it_linux/k5.png" alt=""
+              /></a>
+            </th>
+            <th class="border">
+              <a href="imgs_it_linux/k6.png" target="_blank"
+                ><img src="imgs_it_linux/k6.png" alt=""
+              /></a>
+            </th>
+          </tr>
+        </table>
+
+        <p id="tutorial">
+          5. lépés: A következő képen megadhatod a proxy szerver adataid, ha
+          van. Ha nincs, lépj tovább.
+        </p>
+        <table>
+          <tr>
+            <th class="border">
+              <a href="imgs_it_linux/k7.png" target="_blank"
+                ><img src="imgs_it_linux/k7.png" alt=""
+              /></a>
+            </th>
+          </tr>
+        </table>
+
+        <p id="tutorial">
+          6. lépés: Majd itt megadhatjuk az egyedi repo szervert is ha van, de
+          ha nincs akkor itt is csak lépj tovább.
+        </p>
+        <table>
+          <tr>
+            <th class="border">
+              <a href="imgs_it_linux/k8.png" target="_blank"
+                ><img src="imgs_it_linux/k8.png" alt=""
+              /></a>
+            </th>
+          </tr>
+        </table>
+
+        <p id="tutorial">
+          7. lépés: Particionálás. Itt adjuk meg hova telepítsük az operációs
+          rendszert
+        </p>
+        <table>
+          <tr>
+            <th class="border">
+              <a href="imgs_it_linux/k9.png" target="_blank"
+                ><img src="imgs_it_linux/k9.png" alt=""
+              /></a>
+            </th>
+            <th class="border">
+              <a href="imgs_it_linux/k10.png" target="_blank"
+                ><img src="imgs_it_linux/k10.png" alt=""
+              /></a>
+            </th>
+            <th class="border">
+              <a href="imgs_it_linux/k11.png" target="_blank"
+                ><img src="imgs_it_linux/k11.png" alt=""
+              /></a>
+            </th>
+            <th class="border">
+              <a href="imgs_it_linux/k12.png" target="_blank"
+                ><img src="imgs_it_linux/k12.png" alt=""
+              /></a>
+            </th>
+          </tr>
+        </table>
+
+        <p id="tutorial">
+          6. lépés: Felhasználói fiók hozzáadása. Itt hozza létre a profilját és
+          adja meg a szerver nevét. (ékezetes karaktereket, ne használjunk)
+        </p>
+        <table>
+          <tr>
+            <th class="border">
+              <a href="imgs_it_linux/k13.png" target="_blank"
+                ><img src="imgs_it_linux/k13.png" alt=""
+              /></a>
+            </th>
+          </tr>
+        </table>
+        <p id="tutorial">
+          7. lépés: A maradék dolgokat ugorjuk át mivel csak egy minimális
+          szervert telepítünk és ezeket majd utólag telepítjük rá majd gépre.
+        </p>
+        <table>
+          <tr>
+            <th class="border">
+              <a href="imgs_it_linux/k14.png" target="_blank"
+                ><img src="imgs_it_linux/k14.png" alt=""
+              /></a>
+            </th>
+          </tr>
+        </table>
+
+        <p id="tutorial">
+          8. lépés: Innentől már csak a beállításainknak megfelelően telepíti le
+          az oprendszert ami eltarthat egy edeig.
+        </p>
+        <table>
+          <tr>
+            <th class="border">
+              <a href="imgs_it_linux/k15.png" target="_blank"
+                ><img src="imgs_it_linux/k15.png" alt=""
+              /></a>
+            </th>
+          </tr>
+        </table>
+
+        <p id="tutorial">
+          Gratulálunk! Ügyesen telepítetted a rendszert! Ha minden jól sikerült
+          az alábbi képpen kéne kinéznie a dolognak:
+        </p>
+        <table>
+          <tr>
+            <th class="border">
+              <a href="imgs_it_linux/k16.png" target="_blank"
+                ><img src="imgs_it_linux/k16.png" alt=""
+              /></a>
+            </th>
+          </tr>
+        </table>
+      </section>
+      <div class="divider2"></div>
+      <section id="cmd">
+        <br />
+        <br />
+        <h2>Hasznos parancsok:</h2>
+
+        <ul id="tutorial">
+          <li>sudo - rendszergazdaként futtatni egy parancsot</li>
+          <li>apt - package manager a linuxhoz</li>
+          <li>shutdown -h - leállítás</li>
+          <li>reboot - újraindítás</li>
+          <li>lshw - hardware információk</li>
+          <li>mc - fájlkezelő</li>
+          <li>cd - Könyvtár változtatása</li>
+          <li>history - parancs előzmények</li>
+          <li>clear - képernyő törlése</li>
+          <li>echo - új fájl létrehozása</li>
+          <li>type - fájl tartalma kiírása</li>
+          <li>cp - fájl másolása</li>
+          <li>nano - szövegszerkesztő</li>
+          <li>mkdir - mappa létrehozás</li>
+          <li>rmdir - mappa törlés</li>
+          <li>tree - könyvtár szerkezetek kilistázása</li>
+          <li>ls - jelenlegi mappában lévő fájlok</li>
+          <li>rm - mappa/fájl törlése</li>
+        </ul>
+      </section>
     </main>
-</body>
-    <!--NAVIGATION BAR-->
-    <div id="nav-placeholder">
-    </div>
+  </body>
+  <!--NAVIGATION BAR-->
+  <div id="nav-placeholder"></div>
 
-    <script>
-        $(function(){
-            $("#nav-placeholder").load("/nav.html");
-        });
-    </script>
+  <script>
+    $(function () {
+      $("#nav-placeholder").load("/nav.html");
+    });
+  </script>
 </html>

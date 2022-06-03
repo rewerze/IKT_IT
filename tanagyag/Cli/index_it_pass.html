@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="/style_it.css" />
+    <link rel="stylesheet" href="style.it_pass.css" />
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <title>Cli</title>
+  </head>
+
+  <body>
+    <header id="header">
+      <h1>Cli parancsok</h1>
+    </header>
+
+    <main>
+      <h2>CLI konfigurációs parancsok:</h2>
+      <p>Konfigáriós módok:</p>
+
+      <!--table-->
+    <table>
+        <tr>
+          <th>Megnevezés</td>
+          <th>Jele</th>
+          <th>Továbblépési parancs</th>
+        </tr>
+        <tr>
+          <td>User</td>
+          <td>></td>
+          <td>enable</td>
+        </tr>
+        <tr>
+          <td>Privilege</td>
+          <td>#</td>
+          <td>configure terminal (conf t)</td>
+        </tr>
+        <tr>
+          <td>"Globális" Config</th>
+          <td>(config)#</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td rowspan="2">Config-almódok</td>
+          <td>(config.if)#</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>(config.vlan)#</td>
+          <td></td>
+        </tr>
+    </table>
+    <h4>Interfészre való belépés - Globális config módban</h4>
+    <ul id="tutorial">
+      <li>interface (interfész száma)</li>
+      <li>interface fa0/1</li>
+      <li>interface vlan 1</li>
+    </ul>
+    <h4>Ip cím adás Interfész-config almódban</h4>
+    <ul id="tutorial">
+      <li>ip address (ip cím) (maszk)</li>
+      <li>ip address 172.16.0.0 255.255.255.128</li>
+      <li>port bekapcsolás - no shutdown</li>
+      <li>port kikapcsolás - shutdown</li>
+    </ul>
+    <h4>Több portra való belépés</h4>
+    <ul id="tutorial">
+      <li>interface range (port)-(port)</li>
+      <li>interface range fa0/5-fa0/10</li>
+      <li>interface range fa0/5,fa0/7,fa0/23</li>
+    </ul>
+    <h4>Futó konfiguráció mentése - Privilege módban</h4>
+    <ul id="tutorial">
+      <li>copy running-config startup-config</li>
+    </ul>
+    <h4>Újraindítás - Privilege módban</h4>
+    <ul id="tutorial">
+      <li>reload</li>
+    </ul>
+
+    <div class="divider2"></div>
+    <h2>Jelszavazás:</h2>
+    <h4>Privilégizált módba továblépést gátló jelszó</h4>
+    <ul id="tutorial">
+      <li>sw(config)#enable password (jelszó)</li>
+      <li>sw(config)#enable password Almafa123</li>
+    </ul>
+    <h4>Console kapcsolat lejelszavazása</h4>
+    <ul id="tutorial">
+      <li>sw(config)#line console 0</li>
+      <li>sw(config)#password (jelszó)</li>
+      <li>sw(config)#login</li>
+    </ul>
+    <h4>Távoli elérés lejelszavazása</h4>
+    <ul  id="tutorial">
+        <li>sw(config)#line vty 0 15</li>
+        <li>sw(config)#password (jelszó)</li>
+        <li>sw(config)#login</li>
+    </ul>
+    </main>
+
+    <!--NAVIGATION BAR-->
+    <div id="nav-placeholder"></div>
+
+    <script>
+      $(function () {
+        $("#nav-placeholder").load("/nav.html");
+      });
+    </script>
+  </body>
+</html>

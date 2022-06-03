@@ -1,50 +1,57 @@
 <!DOCTYPE html>
 <html lang="hu">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style_it.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style_it.css" />
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <script src="/script_it.js"></script>
     <title>Letöltés</title>
-</head>
-<body>
+  </head>
+  <body>
     <header id="header">
-        <h1>Cisco letöltése</h1>
+      <h1>Cisco letöltése</h1>
     </header>
 
-<main>
-    <p><b>Letöltés menete:</b><br> Hogy ha már van egy Cisco account-od akkor csak fel kell menned a <a href="https://www.netacad.com" target="_blank">Cisco oldalára</a> és csak le kell tölteni a Packet Tracert. Miután megvan a Setup és felraktad teljesen, indíthatod is a Packet Tracer-t.</p>
+    <main>
+      <p><b>Letöltés menete:</b></p>
+      <p id="tutorial">
+        Hogy ha már van egy Cisco account-od akkor csak fel kell menned a
+        <a href="https://www.netacad.com" target="_blank">Cisco oldalára</a> és
+        csak le kell tölteni a Packet Tracert. Miután megvan a Setup és
+        felraktad teljesen, indíthatod is a Packet Tracer-t.
+      </p>
 
-
-    <!--KÉPEK-->
-    <table>
+      <!--KÉPEK-->
+      <table>
         <tr>
-            <th class="border">
-                <a href="imgs_it_le/k1.png"><img src="imgs_it_le/k1.png" alt=""></a>
-            </th>
-            <th class="border">
-                <a href="imgs_it_le/k2.png"><img src="imgs_it_le/k2.png" alt=""></a>
-            </th>
-            <th class="border">
-                <a href="imgs_it_le/k3.png"><img src="imgs_it_le/k3.png" alt=""></a>
-            </th>
+          <th class="border">
+            <a href="imgs_it_le/k1.png"
+              ><img src="imgs_it_le/k1.png" alt=""
+            /></a>
+          </th>
+          <th class="border">
+            <a href="imgs_it_le/k2.png"
+              ><img src="imgs_it_le/k2.png" alt=""
+            /></a>
+          </th>
+          <th class="border">
+            <a href="imgs_it_le/k3.png"
+              ><img src="imgs_it_le/k3.png" alt=""
+            /></a>
+          </th>
         </tr>
-    </table>
-</main>
+      </table>
+    </main>
 
     <!--NAVIGATION BAR-->
-    <div id="nav-placeholder">
-
-    </div>
+    <div id="nav-placeholder"></div>
 
     <script>
-        $(function(){
-            $("#nav-placeholder").load("/nav.html");
-        });
+      $(function () {
+        $("#nav-placeholder").load("/nav.html");
+      });
     </script>
-
-
-</body>
+  </body>
 </html>
