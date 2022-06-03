@@ -79,6 +79,10 @@ nav ul a {
 	height:8px;
 }
 
+.divider2 {
+	height:150px;
+}
+
 .border {
 	border: 1px solid #5F9EA0;
 	border-width: 5px;
@@ -136,4 +140,19 @@ table {
 
 .fo{
 	width: 100%;
+}
+
+#tutorial{
+	font-style: italic;
+	color: lightslategray;
+}
+
+#nav2 {
+	position: fixed; 
+	top: 90px; 
+	bottom: 0px;
+	width: 230px;
+	background: #005073;
+	margin-right: 0vw;
+	right: 0;
 }
